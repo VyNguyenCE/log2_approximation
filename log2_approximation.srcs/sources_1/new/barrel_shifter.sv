@@ -10,9 +10,9 @@ module barrel_shifter (
     logic [31:0] shifted_x;
 
     always_comb begin
-        // Shift left to align the MSB 1-bit to bit position 31
-        shifted_x = {16'b0, in_x} << (16 - k_in);
-        // Extract 12 bits immediately after the MSB 1-bit
+        // Align bit k_in of in_x to bit 31 of shifted_x
+        shifted_x = {in_x, 16'b0} << (15 - k_in);
+        // Extract 12 bits immediately following the MSB 1-bit (bits [30:19])
         m_frac    = shifted_x[30:19];
     end
 endmodule

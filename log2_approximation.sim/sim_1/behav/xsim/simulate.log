@@ -1,0 +1,21 @@
+Time resolution is 1 ps
+==========================================================================================
+                       FUNCTIONAL SIMULATION FOR LOG2_PLA_CORE                            
+==========================================================================================
+[Time                48000 ns] Input x =     0 | Hex Out = 0x0000 | Approx = N/A    | Exact = N/A    | Invalid = 1 (Pass)
+[Time                64000 ns] Input x =     1 | Hex Out = 0x0000 | Approx =   0.0000 | Exact =   0.0000 | Error = 0.000000
+[Time                80000 ns] Input x =     2 | Hex Out = 0x1000 | Approx =   1.0000 | Exact =   1.0000 | Error = 0.000000
+[Time                96000 ns] Input x =     4 | Hex Out = 0x2000 | Approx =   2.0000 | Exact =   2.0000 | Error = 0.000000
+[Time               112000 ns] Input x =    16 | Hex Out = 0x4000 | Approx =   4.0000 | Exact =   4.0000 | Error = 0.000000
+[Time               128000 ns] Input x =   256 | Hex Out = 0x8000 | Approx =   8.0000 | Exact =   8.0000 | Error = 0.000000
+[Time               144000 ns] Input x =  1024 | Hex Out = 0xa000 | Approx =  10.0000 | Exact =  10.0000 | Error = 0.000000
+[Time               160000 ns] Input x = 32768 | Hex Out = 0xf000 | Approx =  15.0000 | Exact =  15.0000 | Error = 0.000000
+[Time               176000 ns] Input x =     3 | Hex Out = 0x15a5 | Approx =   1.3528 | Exact =   1.5850 | Error = 0.232179
+[Time               192000 ns] Input x =    12 | Hex Out = 0x35a5 | Approx =   3.3528 | Exact =   3.5850 | Error = 0.232179
+[Time               208000 ns] Input x =   255 | Hex Out = 0x7884 | Approx =   7.5322 | Exact =   7.9944 | Error = 0.462127
+[Time               224000 ns] Input x = 12345 | Hex Out = 0xd5b3 | Approx =  13.3562 | Exact =  13.5916 | Error = 0.235438
+[Time               240000 ns] Input x = 65535 | Hex Out = 0xf88c | Approx =  15.5342 | Exact =  16.0000 | Error = 0.465798
+==========================================================================================
+ Maximum Absolute Error (WCE) observed in test suite: 0.465798
+==========================================================================================
+$finish called at time : 240 ns : File "E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/sim_1/new/log2_pla_core_tb.sv" Line 103

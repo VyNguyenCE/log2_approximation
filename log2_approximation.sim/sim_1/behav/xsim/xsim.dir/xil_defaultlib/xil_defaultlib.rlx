@@ -1,0 +1,10 @@
+0.7
+2020.2
+Nov 14 2025
+19:37:27
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.sim/sim_1/behav/xsim/glbl.v,1756381829,verilog,,,,glbl,,uvm,,,,,,
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/sim_1/new/log2_pla_core_tb.sv,1794125410,systemVerilog,,,,log2_pla_core_tb,,uvm,../../../../../../../../../../../../AMDVivado/2025.2/Vivado/data/rsb/busdef,,,,,
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/sources_1/new/barrel_shifter.sv,1794125978,systemVerilog,,E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/sources_1/new/lod_16bit.sv,,barrel_shifter,,uvm,../../../../../../../../../../../../AMDVivado/2025.2/Vivado/data/rsb/busdef,,,,,
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/sources_1/new/lod_16bit.sv,1793526920,systemVerilog,,E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/sources_1/new/log2_pla_core.sv,,lod_16bit,,uvm,../../../../../../../../../../../../AMDVivado/2025.2/Vivado/data/rsb/busdef,,,,,
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/sources_1/new/log2_pla_core.sv,1793527006,systemVerilog,,E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/sources_1/new/pla_8seg_unit.sv,,log2_pla_core,,uvm,../../../../../../../../../../../../AMDVivado/2025.2/Vivado/data/rsb/busdef,,,,,
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/sources_1/new/pla_8seg_unit.sv,1793526980,systemVerilog,,E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/sim_1/new/log2_pla_core_tb.sv,,pla_8seg_unit,,uvm,../../../../../../../../../../../../AMDVivado/2025.2/Vivado/data/rsb/busdef,,,,,
