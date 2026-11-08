@@ -2,9 +2,8 @@
 sv xil_defaultlib  --include "../../../../../../../../../../../../AMDVivado/2025.2/Vivado/data/rsb/busdef" \
 "../../../../log2_approximation.srcs/sources_1/new/barrel_shifter.sv" \
 "../../../../log2_approximation.srcs/sources_1/new/lod_16bit.sv" \
-"../../../../log2_approximation.srcs/sources_1/new/log2_pla_core.sv" \
-"../../../../log2_approximation.srcs/sources_1/new/pla_8seg_unit.sv" \
-"../../../../log2_approximation.srcs/sim_1/new/log2_pla_core_tb.sv" \
+"../../../../log2_approximation.srcs/sources_1/new/log2_lut_dsp_top.sv" \
+"../../../../log2_approximation.srcs/sim_1/new/log2_lut_dsp_top_tb.sv" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"
