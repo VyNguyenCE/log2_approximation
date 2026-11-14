@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-(* use_dsp = "no" *)
+
 module log2_apprx_top (
     input  logic       clk,        // System Clock 125 MHz (Pin H16 PYNQ-Z2)
     input  logic       rst_n,      // Reset Active Low (BTN0 - Pin D19)
