@@ -1,0 +1,21 @@
+Time resolution is 1 ps
+==========================================================================================
+              SIMULATION FOR OPTION C: UN-PIPELINED PLA 8-SEGMENT                         
+==========================================================================================
+[Time                30000 ns] Input x =     0 | Hex Out = 0x0000 | Approx = N/A    | Exact = N/A    | Invalid = 1 (Pass)
+[Time                40000 ns] Input x =     1 | Hex Out = 0x0000 | Approx =   0.0000 | Exact =   0.0000 | Error = 0.000000
+[Time                50000 ns] Input x =     2 | Hex Out = 0x1000 | Approx =   1.0000 | Exact =   1.0000 | Error = 0.000000
+[Time                60000 ns] Input x =     4 | Hex Out = 0x2000 | Approx =   2.0000 | Exact =   2.0000 | Error = 0.000000
+[Time                70000 ns] Input x =    16 | Hex Out = 0x4000 | Approx =   4.0000 | Exact =   4.0000 | Error = 0.000000
+[Time                80000 ns] Input x =   256 | Hex Out = 0x8000 | Approx =   8.0000 | Exact =   8.0000 | Error = 0.000000
+[Time                90000 ns] Input x =  1024 | Hex Out = 0xa000 | Approx =  10.0000 | Exact =  10.0000 | Error = 0.000000
+[Time               100000 ns] Input x = 32768 | Hex Out = 0xf000 | Approx =  15.0000 | Exact =  15.0000 | Error = 0.000000
+[Time               110000 ns] Input x =     3 | Hex Out = 0x195c | Approx =   1.5850 | Exact =   1.5850 | Error = 0.000002
+[Time               120000 ns] Input x =    12 | Hex Out = 0x395c | Approx =   3.5850 | Exact =   3.5850 | Error = 0.000002
+[Time               130000 ns] Input x =   255 | Hex Out = 0x7feb | Approx =   7.9949 | Exact =   7.9944 | Error = 0.000520
+[Time               140000 ns] Input x = 12345 | Hex Out = 0xd977 | Approx =  13.5916 | Exact =  13.5916 | Error = 0.000086
+[Time               150000 ns] Input x = 65535 | Hex Out = 0xffff | Approx =  15.9998 | Exact =  16.0000 | Error = 0.000222
+==========================================================================================
+ Maximum Absolute Error (WCE) for Option C: 0.000520
+==========================================================================================
+$finish called at time : 150 ns : File "E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/sim_1/new/log2_pla_unpipelined_top_tb.sv" Line 83
