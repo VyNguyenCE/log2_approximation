@@ -1,0 +1,581 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Sun Nov 15 14:14:44 2026
+| Host         : VY running 64-bit major release  (build 9200)
+| Command      : report_timing -from [get_ports {x_in[*]}] -to [get_ports {log2_out[*]}] -delay_type max -max_paths 10 -input_pins -file {E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/evaluation_results/02_lut_interpolation/implementation/lut_path_delay.rpt}
+| Design       : log2_lut_dsp_top
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 x_in[8]
+                            (input port)
+  Destination:            log2_out[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        24.817ns  (logic 9.554ns (38.499%)  route 15.263ns (61.501%))
+  Logic Levels:           12  (CARRY4=2 DSP48E1=1 IBUF=1 LUT2=2 LUT3=2 LUT6=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V17                                               0.000     0.000 f  x_in[8] (IN)
+                         net (fo=0)                   0.000     0.000    x_in[8]
+    V17                                                               f  x_in_IBUF[8]_inst/I
+    V17                  IBUF (Prop_ibuf_I_O)         0.996     0.996 f  x_in_IBUF[8]_inst/O
+                         net (fo=12, routed)          2.446     3.442    x_in_IBUF[8]
+    SLICE_X96Y48                                                      f  log2_out_OBUF[13]_inst_i_6/I2
+    SLICE_X96Y48         LUT3 (Prop_lut3_I2_O)        0.150     3.592 r  log2_out_OBUF[13]_inst_i_6/O
+                         net (fo=1, routed)           0.623     4.215    log2_out_OBUF[13]_inst_i_6_n_0
+    SLICE_X97Y48                                                      r  log2_out_OBUF[13]_inst_i_2/I4
+    SLICE_X97Y48         LUT6 (Prop_lut6_I4_O)        0.328     4.543 r  log2_out_OBUF[13]_inst_i_2/O
+                         net (fo=18, routed)          1.261     5.804    log2_out_OBUF[13]_inst_i_2_n_0
+    SLICE_X96Y46                                                      r  interp_product_i_29/I2
+    SLICE_X96Y46         LUT6 (Prop_lut6_I2_O)        0.124     5.928 r  interp_product_i_29/O
+                         net (fo=2, routed)           0.992     6.920    interp_product_i_29_n_0
+    SLICE_X96Y45                                                      r  interp_product_i_35/I1
+    SLICE_X96Y45         LUT6 (Prop_lut6_I1_O)        0.124     7.044 r  interp_product_i_35/O
+                         net (fo=16, routed)          1.504     8.548    lut_idx__0[0]
+    SLICE_X94Y41                                                      r  interp_product_i_17/I0
+    SLICE_X94Y41         LUT3 (Prop_lut3_I0_O)        0.124     8.672 r  interp_product_i_17/O
+                         net (fo=1, routed)           0.685     9.357    A[2]
+    DSP48_X3Y16                                                       r  interp_product/A[2]
+    DSP48_X3Y16          DSP48E1 (Prop_dsp48e1_A[2]_P[10])
+                                                      3.841    13.198 r  interp_product/P[10]
+                         net (fo=2, routed)           1.013    14.212    p_0_in[1]
+    SLICE_X94Y42                                                      r  log2_out_OBUF[3]_inst_i_5/I1
+    SLICE_X94Y42         LUT2 (Prop_lut2_I1_O)        0.124    14.336 r  log2_out_OBUF[3]_inst_i_5/O
+                         net (fo=1, routed)           0.000    14.336    log2_out_OBUF[3]_inst_i_5_n_0
+    SLICE_X94Y42                                                      r  log2_out_OBUF[3]_inst_i_2/S[1]
+    SLICE_X94Y42         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    14.869 r  log2_out_OBUF[3]_inst_i_2/CO[3]
+                         net (fo=1, routed)           0.000    14.869    log2_out_OBUF[3]_inst_i_2_n_0
+    SLICE_X94Y43                                                      r  log2_out_OBUF[7]_inst_i_2/CI
+    SLICE_X94Y43         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    15.088 r  log2_out_OBUF[7]_inst_i_2/O[0]
+                         net (fo=1, routed)           2.891    17.978    frac_result[4]
+    SLICE_X46Y28                                                      r  log2_out_OBUF[4]_inst_i_1/I0
+    SLICE_X46Y28         LUT2 (Prop_lut2_I0_O)        0.295    18.273 r  log2_out_OBUF[4]_inst_i_1/O
+                         net (fo=1, routed)           3.847    22.121    log2_out_OBUF[4]
+    Y13                                                               r  log2_out_OBUF[4]_inst/I
+    Y13                  OBUF (Prop_obuf_I_O)         2.696    24.817 r  log2_out_OBUF[4]_inst/O
+                         net (fo=0)                   0.000    24.817    log2_out[4]
+    Y13                                                               r  log2_out[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 x_in[8]
+                            (input port)
+  Destination:            log2_out[11]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        24.703ns  (logic 9.999ns (40.476%)  route 14.704ns (59.524%))
+  Logic Levels:           13  (CARRY4=3 DSP48E1=1 IBUF=1 LUT2=2 LUT3=2 LUT6=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V17                                               0.000     0.000 f  x_in[8] (IN)
+                         net (fo=0)                   0.000     0.000    x_in[8]
+    V17                                                               f  x_in_IBUF[8]_inst/I
+    V17                  IBUF (Prop_ibuf_I_O)         0.996     0.996 f  x_in_IBUF[8]_inst/O
+                         net (fo=12, routed)          2.446     3.442    x_in_IBUF[8]
+    SLICE_X96Y48                                                      f  log2_out_OBUF[13]_inst_i_6/I2
+    SLICE_X96Y48         LUT3 (Prop_lut3_I2_O)        0.150     3.592 r  log2_out_OBUF[13]_inst_i_6/O
+                         net (fo=1, routed)           0.623     4.215    log2_out_OBUF[13]_inst_i_6_n_0
+    SLICE_X97Y48                                                      r  log2_out_OBUF[13]_inst_i_2/I4
+    SLICE_X97Y48         LUT6 (Prop_lut6_I4_O)        0.328     4.543 r  log2_out_OBUF[13]_inst_i_2/O
+                         net (fo=18, routed)          1.261     5.804    log2_out_OBUF[13]_inst_i_2_n_0
+    SLICE_X96Y46                                                      r  interp_product_i_29/I2
+    SLICE_X96Y46         LUT6 (Prop_lut6_I2_O)        0.124     5.928 r  interp_product_i_29/O
+                         net (fo=2, routed)           0.992     6.920    interp_product_i_29_n_0
+    SLICE_X96Y45                                                      r  interp_product_i_35/I1
+    SLICE_X96Y45         LUT6 (Prop_lut6_I1_O)        0.124     7.044 r  interp_product_i_35/O
+                         net (fo=16, routed)          1.504     8.548    lut_idx__0[0]
+    SLICE_X94Y41                                                      r  interp_product_i_17/I0
+    SLICE_X94Y41         LUT3 (Prop_lut3_I0_O)        0.124     8.672 r  interp_product_i_17/O
+                         net (fo=1, routed)           0.685     9.357    A[2]
+    DSP48_X3Y16                                                       r  interp_product/A[2]
+    DSP48_X3Y16          DSP48E1 (Prop_dsp48e1_A[2]_P[10])
+                                                      3.841    13.198 r  interp_product/P[10]
+                         net (fo=2, routed)           1.013    14.212    p_0_in[1]
+    SLICE_X94Y42                                                      r  log2_out_OBUF[3]_inst_i_5/I1
+    SLICE_X94Y42         LUT2 (Prop_lut2_I1_O)        0.124    14.336 r  log2_out_OBUF[3]_inst_i_5/O
+                         net (fo=1, routed)           0.000    14.336    log2_out_OBUF[3]_inst_i_5_n_0
+    SLICE_X94Y42                                                      r  log2_out_OBUF[3]_inst_i_2/S[1]
+    SLICE_X94Y42         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    14.869 r  log2_out_OBUF[3]_inst_i_2/CO[3]
+                         net (fo=1, routed)           0.000    14.869    log2_out_OBUF[3]_inst_i_2_n_0
+    SLICE_X94Y43                                                      r  log2_out_OBUF[7]_inst_i_2/CI
+    SLICE_X94Y43         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.986 r  log2_out_OBUF[7]_inst_i_2/CO[3]
+                         net (fo=1, routed)           0.000    14.986    log2_out_OBUF[7]_inst_i_2_n_0
+    SLICE_X94Y44                                                      r  log2_out_OBUF[11]_inst_i_2/CI
+    SLICE_X94Y44         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315    15.301 r  log2_out_OBUF[11]_inst_i_2/O[3]
+                         net (fo=1, routed)           2.532    17.833    frac_result[11]
+    SLICE_X46Y30                                                      r  log2_out_OBUF[11]_inst_i_1/I0
+    SLICE_X46Y30         LUT2 (Prop_lut2_I0_O)        0.331    18.164 r  log2_out_OBUF[11]_inst_i_1/O
+                         net (fo=1, routed)           3.647    21.811    log2_out_OBUF[11]
+    U9                                                                r  log2_out_OBUF[11]_inst/I
+    U9                   OBUF (Prop_obuf_I_O)         2.892    24.703 r  log2_out_OBUF[11]_inst/O
+                         net (fo=0)                   0.000    24.703    log2_out[11]
+    U9                                                                r  log2_out[11] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 x_in[8]
+                            (input port)
+  Destination:            log2_out[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        24.613ns  (logic 9.646ns (39.188%)  route 14.968ns (60.812%))
+  Logic Levels:           11  (CARRY4=1 DSP48E1=1 IBUF=1 LUT2=2 LUT3=2 LUT6=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V17                                               0.000     0.000 f  x_in[8] (IN)
+                         net (fo=0)                   0.000     0.000    x_in[8]
+    V17                                                               f  x_in_IBUF[8]_inst/I
+    V17                  IBUF (Prop_ibuf_I_O)         0.996     0.996 f  x_in_IBUF[8]_inst/O
+                         net (fo=12, routed)          2.446     3.442    x_in_IBUF[8]
+    SLICE_X96Y48                                                      f  log2_out_OBUF[13]_inst_i_6/I2
+    SLICE_X96Y48         LUT3 (Prop_lut3_I2_O)        0.150     3.592 r  log2_out_OBUF[13]_inst_i_6/O
+                         net (fo=1, routed)           0.623     4.215    log2_out_OBUF[13]_inst_i_6_n_0
+    SLICE_X97Y48                                                      r  log2_out_OBUF[13]_inst_i_2/I4
+    SLICE_X97Y48         LUT6 (Prop_lut6_I4_O)        0.328     4.543 r  log2_out_OBUF[13]_inst_i_2/O
+                         net (fo=18, routed)          1.261     5.804    log2_out_OBUF[13]_inst_i_2_n_0
+    SLICE_X96Y46                                                      r  interp_product_i_29/I2
+    SLICE_X96Y46         LUT6 (Prop_lut6_I2_O)        0.124     5.928 r  interp_product_i_29/O
+                         net (fo=2, routed)           0.992     6.920    interp_product_i_29_n_0
+    SLICE_X96Y45                                                      r  interp_product_i_35/I1
+    SLICE_X96Y45         LUT6 (Prop_lut6_I1_O)        0.124     7.044 r  interp_product_i_35/O
+                         net (fo=16, routed)          1.504     8.548    lut_idx__0[0]
+    SLICE_X94Y41                                                      r  interp_product_i_17/I0
+    SLICE_X94Y41         LUT3 (Prop_lut3_I0_O)        0.124     8.672 r  interp_product_i_17/O
+                         net (fo=1, routed)           0.685     9.357    A[2]
+    DSP48_X3Y16                                                       r  interp_product/A[2]
+    DSP48_X3Y16          DSP48E1 (Prop_dsp48e1_A[2]_P[10])
+                                                      3.841    13.198 r  interp_product/P[10]
+                         net (fo=2, routed)           1.013    14.212    p_0_in[1]
+    SLICE_X94Y42                                                      r  log2_out_OBUF[3]_inst_i_5/I1
+    SLICE_X94Y42         LUT2 (Prop_lut2_I1_O)        0.124    14.336 r  log2_out_OBUF[3]_inst_i_5/O
+                         net (fo=1, routed)           0.000    14.336    log2_out_OBUF[3]_inst_i_5_n_0
+    SLICE_X94Y42                                                      r  log2_out_OBUF[3]_inst_i_2/S[1]
+    SLICE_X94Y42         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.643    14.979 r  log2_out_OBUF[3]_inst_i_2/O[3]
+                         net (fo=1, routed)           2.691    17.670    frac_result[3]
+    SLICE_X46Y28                                                      r  log2_out_OBUF[3]_inst_i_1/I0
+    SLICE_X46Y28         LUT2 (Prop_lut2_I0_O)        0.333    18.003 r  log2_out_OBUF[3]_inst_i_1/O
+                         net (fo=1, routed)           3.752    21.755    log2_out_OBUF[3]
+    V11                                                               r  log2_out_OBUF[3]_inst/I
+    V11                  OBUF (Prop_obuf_I_O)         2.858    24.613 r  log2_out_OBUF[3]_inst/O
+                         net (fo=0)                   0.000    24.613    log2_out[3]
+    V11                                                               r  log2_out[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 x_in[8]
+                            (input port)
+  Destination:            log2_out[9]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        24.521ns  (logic 10.024ns (40.877%)  route 14.498ns (59.123%))
+  Logic Levels:           13  (CARRY4=3 DSP48E1=1 IBUF=1 LUT2=2 LUT3=2 LUT6=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V17                                               0.000     0.000 f  x_in[8] (IN)
+                         net (fo=0)                   0.000     0.000    x_in[8]
+    V17                                                               f  x_in_IBUF[8]_inst/I
+    V17                  IBUF (Prop_ibuf_I_O)         0.996     0.996 f  x_in_IBUF[8]_inst/O
+                         net (fo=12, routed)          2.446     3.442    x_in_IBUF[8]
+    SLICE_X96Y48                                                      f  log2_out_OBUF[13]_inst_i_6/I2
+    SLICE_X96Y48         LUT3 (Prop_lut3_I2_O)        0.150     3.592 r  log2_out_OBUF[13]_inst_i_6/O
+                         net (fo=1, routed)           0.623     4.215    log2_out_OBUF[13]_inst_i_6_n_0
+    SLICE_X97Y48                                                      r  log2_out_OBUF[13]_inst_i_2/I4
+    SLICE_X97Y48         LUT6 (Prop_lut6_I4_O)        0.328     4.543 r  log2_out_OBUF[13]_inst_i_2/O
+                         net (fo=18, routed)          1.261     5.804    log2_out_OBUF[13]_inst_i_2_n_0
+    SLICE_X96Y46                                                      r  interp_product_i_29/I2
+    SLICE_X96Y46         LUT6 (Prop_lut6_I2_O)        0.124     5.928 r  interp_product_i_29/O
+                         net (fo=2, routed)           0.992     6.920    interp_product_i_29_n_0
+    SLICE_X96Y45                                                      r  interp_product_i_35/I1
+    SLICE_X96Y45         LUT6 (Prop_lut6_I1_O)        0.124     7.044 r  interp_product_i_35/O
+                         net (fo=16, routed)          1.504     8.548    lut_idx__0[0]
+    SLICE_X94Y41                                                      r  interp_product_i_17/I0
+    SLICE_X94Y41         LUT3 (Prop_lut3_I0_O)        0.124     8.672 r  interp_product_i_17/O
+                         net (fo=1, routed)           0.685     9.357    A[2]
+    DSP48_X3Y16                                                       r  interp_product/A[2]
+    DSP48_X3Y16          DSP48E1 (Prop_dsp48e1_A[2]_P[10])
+                                                      3.841    13.198 r  interp_product/P[10]
+                         net (fo=2, routed)           1.013    14.212    p_0_in[1]
+    SLICE_X94Y42                                                      r  log2_out_OBUF[3]_inst_i_5/I1
+    SLICE_X94Y42         LUT2 (Prop_lut2_I1_O)        0.124    14.336 r  log2_out_OBUF[3]_inst_i_5/O
+                         net (fo=1, routed)           0.000    14.336    log2_out_OBUF[3]_inst_i_5_n_0
+    SLICE_X94Y42                                                      r  log2_out_OBUF[3]_inst_i_2/S[1]
+    SLICE_X94Y42         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    14.869 r  log2_out_OBUF[3]_inst_i_2/CO[3]
+                         net (fo=1, routed)           0.000    14.869    log2_out_OBUF[3]_inst_i_2_n_0
+    SLICE_X94Y43                                                      r  log2_out_OBUF[7]_inst_i_2/CI
+    SLICE_X94Y43         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.986 r  log2_out_OBUF[7]_inst_i_2/CO[3]
+                         net (fo=1, routed)           0.000    14.986    log2_out_OBUF[7]_inst_i_2_n_0
+    SLICE_X94Y44                                                      r  log2_out_OBUF[11]_inst_i_2/CI
+    SLICE_X94Y44         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    15.309 r  log2_out_OBUF[11]_inst_i_2/O[1]
+                         net (fo=1, routed)           2.305    17.613    frac_result[9]
+    SLICE_X46Y28                                                      r  log2_out_OBUF[9]_inst_i_1/I0
+    SLICE_X46Y28         LUT2 (Prop_lut2_I0_O)        0.331    17.944 r  log2_out_OBUF[9]_inst_i_1/O
+                         net (fo=1, routed)           3.668    21.613    log2_out_OBUF[9]
+    W11                                                               r  log2_out_OBUF[9]_inst/I
+    W11                  OBUF (Prop_obuf_I_O)         2.909    24.521 r  log2_out_OBUF[9]_inst/O
+                         net (fo=0)                   0.000    24.521    log2_out[9]
+    W11                                                               r  log2_out[9] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 x_in[8]
+                            (input port)
+  Destination:            log2_out[7]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        24.359ns  (logic 9.865ns (40.500%)  route 14.493ns (59.500%))
+  Logic Levels:           12  (CARRY4=2 DSP48E1=1 IBUF=1 LUT2=2 LUT3=2 LUT6=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V17                                               0.000     0.000 f  x_in[8] (IN)
+                         net (fo=0)                   0.000     0.000    x_in[8]
+    V17                                                               f  x_in_IBUF[8]_inst/I
+    V17                  IBUF (Prop_ibuf_I_O)         0.996     0.996 f  x_in_IBUF[8]_inst/O
+                         net (fo=12, routed)          2.446     3.442    x_in_IBUF[8]
+    SLICE_X96Y48                                                      f  log2_out_OBUF[13]_inst_i_6/I2
+    SLICE_X96Y48         LUT3 (Prop_lut3_I2_O)        0.150     3.592 r  log2_out_OBUF[13]_inst_i_6/O
+                         net (fo=1, routed)           0.623     4.215    log2_out_OBUF[13]_inst_i_6_n_0
+    SLICE_X97Y48                                                      r  log2_out_OBUF[13]_inst_i_2/I4
+    SLICE_X97Y48         LUT6 (Prop_lut6_I4_O)        0.328     4.543 r  log2_out_OBUF[13]_inst_i_2/O
+                         net (fo=18, routed)          1.261     5.804    log2_out_OBUF[13]_inst_i_2_n_0
+    SLICE_X96Y46                                                      r  interp_product_i_29/I2
+    SLICE_X96Y46         LUT6 (Prop_lut6_I2_O)        0.124     5.928 r  interp_product_i_29/O
+                         net (fo=2, routed)           0.992     6.920    interp_product_i_29_n_0
+    SLICE_X96Y45                                                      r  interp_product_i_35/I1
+    SLICE_X96Y45         LUT6 (Prop_lut6_I1_O)        0.124     7.044 r  interp_product_i_35/O
+                         net (fo=16, routed)          1.504     8.548    lut_idx__0[0]
+    SLICE_X94Y41                                                      r  interp_product_i_17/I0
+    SLICE_X94Y41         LUT3 (Prop_lut3_I0_O)        0.124     8.672 r  interp_product_i_17/O
+                         net (fo=1, routed)           0.685     9.357    A[2]
+    DSP48_X3Y16                                                       r  interp_product/A[2]
+    DSP48_X3Y16          DSP48E1 (Prop_dsp48e1_A[2]_P[10])
+                                                      3.841    13.198 r  interp_product/P[10]
+                         net (fo=2, routed)           1.013    14.212    p_0_in[1]
+    SLICE_X94Y42                                                      r  log2_out_OBUF[3]_inst_i_5/I1
+    SLICE_X94Y42         LUT2 (Prop_lut2_I1_O)        0.124    14.336 r  log2_out_OBUF[3]_inst_i_5/O
+                         net (fo=1, routed)           0.000    14.336    log2_out_OBUF[3]_inst_i_5_n_0
+    SLICE_X94Y42                                                      r  log2_out_OBUF[3]_inst_i_2/S[1]
+    SLICE_X94Y42         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    14.869 r  log2_out_OBUF[3]_inst_i_2/CO[3]
+                         net (fo=1, routed)           0.000    14.869    log2_out_OBUF[3]_inst_i_2_n_0
+    SLICE_X94Y43                                                      r  log2_out_OBUF[7]_inst_i_2/CI
+    SLICE_X94Y43         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315    15.184 r  log2_out_OBUF[7]_inst_i_2/O[3]
+                         net (fo=1, routed)           2.602    17.786    frac_result[7]
+    SLICE_X46Y28                                                      r  log2_out_OBUF[7]_inst_i_1/I0
+    SLICE_X46Y28         LUT2 (Prop_lut2_I0_O)        0.336    18.122 r  log2_out_OBUF[7]_inst_i_1/O
+                         net (fo=1, routed)           3.367    21.488    log2_out_OBUF[7]
+    T5                                                                r  log2_out_OBUF[7]_inst/I
+    T5                   OBUF (Prop_obuf_I_O)         2.870    24.359 r  log2_out_OBUF[7]_inst/O
+                         net (fo=0)                   0.000    24.359    log2_out[7]
+    T5                                                                r  log2_out[7] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 x_in[8]
+                            (input port)
+  Destination:            log2_out[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        24.317ns  (logic 9.203ns (37.845%)  route 15.114ns (62.155%))
+  Logic Levels:           11  (CARRY4=1 DSP48E1=1 IBUF=1 LUT2=1 LUT3=2 LUT4=1 LUT6=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V17                                               0.000     0.000 f  x_in[8] (IN)
+                         net (fo=0)                   0.000     0.000    x_in[8]
+    V17                                                               f  x_in_IBUF[8]_inst/I
+    V17                  IBUF (Prop_ibuf_I_O)         0.996     0.996 f  x_in_IBUF[8]_inst/O
+                         net (fo=12, routed)          2.446     3.442    x_in_IBUF[8]
+    SLICE_X96Y48                                                      f  log2_out_OBUF[13]_inst_i_6/I2
+    SLICE_X96Y48         LUT3 (Prop_lut3_I2_O)        0.150     3.592 r  log2_out_OBUF[13]_inst_i_6/O
+                         net (fo=1, routed)           0.623     4.215    log2_out_OBUF[13]_inst_i_6_n_0
+    SLICE_X97Y48                                                      r  log2_out_OBUF[13]_inst_i_2/I4
+    SLICE_X97Y48         LUT6 (Prop_lut6_I4_O)        0.328     4.543 r  log2_out_OBUF[13]_inst_i_2/O
+                         net (fo=18, routed)          1.261     5.804    log2_out_OBUF[13]_inst_i_2_n_0
+    SLICE_X96Y46                                                      r  interp_product_i_29/I2
+    SLICE_X96Y46         LUT6 (Prop_lut6_I2_O)        0.124     5.928 r  interp_product_i_29/O
+                         net (fo=2, routed)           0.992     6.920    interp_product_i_29_n_0
+    SLICE_X96Y45                                                      r  interp_product_i_35/I1
+    SLICE_X96Y45         LUT6 (Prop_lut6_I1_O)        0.124     7.044 r  interp_product_i_35/O
+                         net (fo=16, routed)          1.504     8.548    lut_idx__0[0]
+    SLICE_X94Y41                                                      r  interp_product_i_17/I0
+    SLICE_X94Y41         LUT3 (Prop_lut3_I0_O)        0.124     8.672 r  interp_product_i_17/O
+                         net (fo=1, routed)           0.685     9.357    A[2]
+    DSP48_X3Y16                                                       r  interp_product/A[2]
+    DSP48_X3Y16          DSP48E1 (Prop_dsp48e1_A[2]_P[9])
+                                                      3.841    13.198 r  interp_product/P[9]
+                         net (fo=2, routed)           0.881    14.080    p_0_in[0]
+    SLICE_X94Y42                                                      r  log2_out_OBUF[3]_inst_i_6/I3
+    SLICE_X94Y42         LUT4 (Prop_lut4_I3_O)        0.124    14.204 r  log2_out_OBUF[3]_inst_i_6/O
+                         net (fo=1, routed)           0.000    14.204    log2_out_OBUF[3]_inst_i_6_n_0
+    SLICE_X94Y42                                                      r  log2_out_OBUF[3]_inst_i_2/S[0]
+    SLICE_X94Y42         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.252    14.456 r  log2_out_OBUF[3]_inst_i_2/O[0]
+                         net (fo=1, routed)           2.849    17.305    frac_result[0]
+    SLICE_X46Y26                                                      r  log2_out_OBUF[0]_inst_i_1/I0
+    SLICE_X46Y26         LUT2 (Prop_lut2_I0_O)        0.317    17.622 r  log2_out_OBUF[0]_inst_i_1/O
+                         net (fo=1, routed)           3.873    21.494    log2_out_OBUF[0]
+    W6                                                                r  log2_out_OBUF[0]_inst/I
+    W6                   OBUF (Prop_obuf_I_O)         2.823    24.317 r  log2_out_OBUF[0]_inst/O
+                         net (fo=0)                   0.000    24.317    log2_out[0]
+    W6                                                                r  log2_out[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 x_in[8]
+                            (input port)
+  Destination:            log2_out[10]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        24.149ns  (logic 9.668ns (40.034%)  route 14.481ns (59.966%))
+  Logic Levels:           13  (CARRY4=3 DSP48E1=1 IBUF=1 LUT2=2 LUT3=2 LUT6=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V17                                               0.000     0.000 f  x_in[8] (IN)
+                         net (fo=0)                   0.000     0.000    x_in[8]
+    V17                                                               f  x_in_IBUF[8]_inst/I
+    V17                  IBUF (Prop_ibuf_I_O)         0.996     0.996 f  x_in_IBUF[8]_inst/O
+                         net (fo=12, routed)          2.446     3.442    x_in_IBUF[8]
+    SLICE_X96Y48                                                      f  log2_out_OBUF[13]_inst_i_6/I2
+    SLICE_X96Y48         LUT3 (Prop_lut3_I2_O)        0.150     3.592 r  log2_out_OBUF[13]_inst_i_6/O
+                         net (fo=1, routed)           0.623     4.215    log2_out_OBUF[13]_inst_i_6_n_0
+    SLICE_X97Y48                                                      r  log2_out_OBUF[13]_inst_i_2/I4
+    SLICE_X97Y48         LUT6 (Prop_lut6_I4_O)        0.328     4.543 r  log2_out_OBUF[13]_inst_i_2/O
+                         net (fo=18, routed)          1.261     5.804    log2_out_OBUF[13]_inst_i_2_n_0
+    SLICE_X96Y46                                                      r  interp_product_i_29/I2
+    SLICE_X96Y46         LUT6 (Prop_lut6_I2_O)        0.124     5.928 r  interp_product_i_29/O
+                         net (fo=2, routed)           0.992     6.920    interp_product_i_29_n_0
+    SLICE_X96Y45                                                      r  interp_product_i_35/I1
+    SLICE_X96Y45         LUT6 (Prop_lut6_I1_O)        0.124     7.044 r  interp_product_i_35/O
+                         net (fo=16, routed)          1.504     8.548    lut_idx__0[0]
+    SLICE_X94Y41                                                      r  interp_product_i_17/I0
+    SLICE_X94Y41         LUT3 (Prop_lut3_I0_O)        0.124     8.672 r  interp_product_i_17/O
+                         net (fo=1, routed)           0.685     9.357    A[2]
+    DSP48_X3Y16                                                       r  interp_product/A[2]
+    DSP48_X3Y16          DSP48E1 (Prop_dsp48e1_A[2]_P[10])
+                                                      3.841    13.198 r  interp_product/P[10]
+                         net (fo=2, routed)           1.013    14.212    p_0_in[1]
+    SLICE_X94Y42                                                      r  log2_out_OBUF[3]_inst_i_5/I1
+    SLICE_X94Y42         LUT2 (Prop_lut2_I1_O)        0.124    14.336 r  log2_out_OBUF[3]_inst_i_5/O
+                         net (fo=1, routed)           0.000    14.336    log2_out_OBUF[3]_inst_i_5_n_0
+    SLICE_X94Y42                                                      r  log2_out_OBUF[3]_inst_i_2/S[1]
+    SLICE_X94Y42         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    14.869 r  log2_out_OBUF[3]_inst_i_2/CO[3]
+                         net (fo=1, routed)           0.000    14.869    log2_out_OBUF[3]_inst_i_2_n_0
+    SLICE_X94Y43                                                      r  log2_out_OBUF[7]_inst_i_2/CI
+    SLICE_X94Y43         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.986 r  log2_out_OBUF[7]_inst_i_2/CO[3]
+                         net (fo=1, routed)           0.000    14.986    log2_out_OBUF[7]_inst_i_2_n_0
+    SLICE_X94Y44                                                      r  log2_out_OBUF[11]_inst_i_2/CI
+    SLICE_X94Y44         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    15.225 r  log2_out_OBUF[11]_inst_i_2/O[2]
+                         net (fo=1, routed)           2.293    17.517    frac_result[10]
+    SLICE_X46Y30                                                      r  log2_out_OBUF[10]_inst_i_1/I0
+    SLICE_X46Y30         LUT2 (Prop_lut2_I0_O)        0.301    17.818 r  log2_out_OBUF[10]_inst_i_1/O
+                         net (fo=1, routed)           3.664    21.482    log2_out_OBUF[10]
+    U8                                                                r  log2_out_OBUF[10]_inst/I
+    U8                   OBUF (Prop_obuf_I_O)         2.667    24.149 r  log2_out_OBUF[10]_inst/O
+                         net (fo=0)                   0.000    24.149    log2_out[10]
+    U8                                                                r  log2_out[10] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 x_in[8]
+                            (input port)
+  Destination:            log2_out[6]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        24.143ns  (logic 9.490ns (39.306%)  route 14.654ns (60.694%))
+  Logic Levels:           12  (CARRY4=2 DSP48E1=1 IBUF=1 LUT2=2 LUT3=2 LUT6=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V17                                               0.000     0.000 f  x_in[8] (IN)
+                         net (fo=0)                   0.000     0.000    x_in[8]
+    V17                                                               f  x_in_IBUF[8]_inst/I
+    V17                  IBUF (Prop_ibuf_I_O)         0.996     0.996 f  x_in_IBUF[8]_inst/O
+                         net (fo=12, routed)          2.446     3.442    x_in_IBUF[8]
+    SLICE_X96Y48                                                      f  log2_out_OBUF[13]_inst_i_6/I2
+    SLICE_X96Y48         LUT3 (Prop_lut3_I2_O)        0.150     3.592 r  log2_out_OBUF[13]_inst_i_6/O
+                         net (fo=1, routed)           0.623     4.215    log2_out_OBUF[13]_inst_i_6_n_0
+    SLICE_X97Y48                                                      r  log2_out_OBUF[13]_inst_i_2/I4
+    SLICE_X97Y48         LUT6 (Prop_lut6_I4_O)        0.328     4.543 r  log2_out_OBUF[13]_inst_i_2/O
+                         net (fo=18, routed)          1.261     5.804    log2_out_OBUF[13]_inst_i_2_n_0
+    SLICE_X96Y46                                                      r  interp_product_i_29/I2
+    SLICE_X96Y46         LUT6 (Prop_lut6_I2_O)        0.124     5.928 r  interp_product_i_29/O
+                         net (fo=2, routed)           0.992     6.920    interp_product_i_29_n_0
+    SLICE_X96Y45                                                      r  interp_product_i_35/I1
+    SLICE_X96Y45         LUT6 (Prop_lut6_I1_O)        0.124     7.044 r  interp_product_i_35/O
+                         net (fo=16, routed)          1.504     8.548    lut_idx__0[0]
+    SLICE_X94Y41                                                      r  interp_product_i_17/I0
+    SLICE_X94Y41         LUT3 (Prop_lut3_I0_O)        0.124     8.672 r  interp_product_i_17/O
+                         net (fo=1, routed)           0.685     9.357    A[2]
+    DSP48_X3Y16                                                       r  interp_product/A[2]
+    DSP48_X3Y16          DSP48E1 (Prop_dsp48e1_A[2]_P[10])
+                                                      3.841    13.198 r  interp_product/P[10]
+                         net (fo=2, routed)           1.013    14.212    p_0_in[1]
+    SLICE_X94Y42                                                      r  log2_out_OBUF[3]_inst_i_5/I1
+    SLICE_X94Y42         LUT2 (Prop_lut2_I1_O)        0.124    14.336 r  log2_out_OBUF[3]_inst_i_5/O
+                         net (fo=1, routed)           0.000    14.336    log2_out_OBUF[3]_inst_i_5_n_0
+    SLICE_X94Y42                                                      r  log2_out_OBUF[3]_inst_i_2/S[1]
+    SLICE_X94Y42         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    14.869 r  log2_out_OBUF[3]_inst_i_2/CO[3]
+                         net (fo=1, routed)           0.000    14.869    log2_out_OBUF[3]_inst_i_2_n_0
+    SLICE_X94Y43                                                      r  log2_out_OBUF[7]_inst_i_2/CI
+    SLICE_X94Y43         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    15.108 r  log2_out_OBUF[7]_inst_i_2/O[2]
+                         net (fo=1, routed)           2.300    17.407    frac_result[6]
+    SLICE_X46Y28                                                      r  log2_out_OBUF[6]_inst_i_1/I0
+    SLICE_X46Y28         LUT2 (Prop_lut2_I0_O)        0.301    17.708 r  log2_out_OBUF[6]_inst_i_1/O
+                         net (fo=1, routed)           3.829    21.538    log2_out_OBUF[6]
+    U5                                                                r  log2_out_OBUF[6]_inst/I
+    U5                   OBUF (Prop_obuf_I_O)         2.606    24.143 r  log2_out_OBUF[6]_inst/O
+                         net (fo=0)                   0.000    24.143    log2_out[6]
+    U5                                                                r  log2_out[6] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 x_in[8]
+                            (input port)
+  Destination:            log2_out[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        24.009ns  (logic 9.343ns (38.913%)  route 14.666ns (61.087%))
+  Logic Levels:           11  (CARRY4=1 DSP48E1=1 IBUF=1 LUT2=2 LUT3=2 LUT6=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V17                                               0.000     0.000 f  x_in[8] (IN)
+                         net (fo=0)                   0.000     0.000    x_in[8]
+    V17                                                               f  x_in_IBUF[8]_inst/I
+    V17                  IBUF (Prop_ibuf_I_O)         0.996     0.996 f  x_in_IBUF[8]_inst/O
+                         net (fo=12, routed)          2.446     3.442    x_in_IBUF[8]
+    SLICE_X96Y48                                                      f  log2_out_OBUF[13]_inst_i_6/I2
+    SLICE_X96Y48         LUT3 (Prop_lut3_I2_O)        0.150     3.592 r  log2_out_OBUF[13]_inst_i_6/O
+                         net (fo=1, routed)           0.623     4.215    log2_out_OBUF[13]_inst_i_6_n_0
+    SLICE_X97Y48                                                      r  log2_out_OBUF[13]_inst_i_2/I4
+    SLICE_X97Y48         LUT6 (Prop_lut6_I4_O)        0.328     4.543 r  log2_out_OBUF[13]_inst_i_2/O
+                         net (fo=18, routed)          1.261     5.804    log2_out_OBUF[13]_inst_i_2_n_0
+    SLICE_X96Y46                                                      r  interp_product_i_29/I2
+    SLICE_X96Y46         LUT6 (Prop_lut6_I2_O)        0.124     5.928 r  interp_product_i_29/O
+                         net (fo=2, routed)           0.992     6.920    interp_product_i_29_n_0
+    SLICE_X96Y45                                                      r  interp_product_i_35/I1
+    SLICE_X96Y45         LUT6 (Prop_lut6_I1_O)        0.124     7.044 r  interp_product_i_35/O
+                         net (fo=16, routed)          1.504     8.548    lut_idx__0[0]
+    SLICE_X94Y41                                                      r  interp_product_i_17/I0
+    SLICE_X94Y41         LUT3 (Prop_lut3_I0_O)        0.124     8.672 r  interp_product_i_17/O
+                         net (fo=1, routed)           0.685     9.357    A[2]
+    DSP48_X3Y16                                                       r  interp_product/A[2]
+    DSP48_X3Y16          DSP48E1 (Prop_dsp48e1_A[2]_P[10])
+                                                      3.841    13.198 r  interp_product/P[10]
+                         net (fo=2, routed)           1.013    14.212    p_0_in[1]
+    SLICE_X94Y42                                                      r  log2_out_OBUF[3]_inst_i_5/I1
+    SLICE_X94Y42         LUT2 (Prop_lut2_I1_O)        0.124    14.336 r  log2_out_OBUF[3]_inst_i_5/O
+                         net (fo=1, routed)           0.000    14.336    log2_out_OBUF[3]_inst_i_5_n_0
+    SLICE_X94Y42                                                      r  log2_out_OBUF[3]_inst_i_2/S[1]
+    SLICE_X94Y42         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.578    14.914 r  log2_out_OBUF[3]_inst_i_2/O[2]
+                         net (fo=1, routed)           2.293    17.206    frac_result[2]
+    SLICE_X46Y28                                                      r  log2_out_OBUF[2]_inst_i_1/I0
+    SLICE_X46Y28         LUT2 (Prop_lut2_I0_O)        0.301    17.507 r  log2_out_OBUF[2]_inst_i_1/O
+                         net (fo=1, routed)           3.849    21.356    log2_out_OBUF[2]
+    V10                                                               r  log2_out_OBUF[2]_inst/I
+    V10                  OBUF (Prop_obuf_I_O)         2.653    24.009 r  log2_out_OBUF[2]_inst/O
+                         net (fo=0)                   0.000    24.009    log2_out[2]
+    V10                                                               r  log2_out[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 x_in[8]
+                            (input port)
+  Destination:            log2_out[8]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        23.985ns  (logic 9.656ns (40.259%)  route 14.329ns (59.741%))
+  Logic Levels:           13  (CARRY4=3 DSP48E1=1 IBUF=1 LUT2=2 LUT3=2 LUT6=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V17                                               0.000     0.000 f  x_in[8] (IN)
+                         net (fo=0)                   0.000     0.000    x_in[8]
+    V17                                                               f  x_in_IBUF[8]_inst/I
+    V17                  IBUF (Prop_ibuf_I_O)         0.996     0.996 f  x_in_IBUF[8]_inst/O
+                         net (fo=12, routed)          2.446     3.442    x_in_IBUF[8]
+    SLICE_X96Y48                                                      f  log2_out_OBUF[13]_inst_i_6/I2
+    SLICE_X96Y48         LUT3 (Prop_lut3_I2_O)        0.150     3.592 r  log2_out_OBUF[13]_inst_i_6/O
+                         net (fo=1, routed)           0.623     4.215    log2_out_OBUF[13]_inst_i_6_n_0
+    SLICE_X97Y48                                                      r  log2_out_OBUF[13]_inst_i_2/I4
+    SLICE_X97Y48         LUT6 (Prop_lut6_I4_O)        0.328     4.543 r  log2_out_OBUF[13]_inst_i_2/O
+                         net (fo=18, routed)          1.261     5.804    log2_out_OBUF[13]_inst_i_2_n_0
+    SLICE_X96Y46                                                      r  interp_product_i_29/I2
+    SLICE_X96Y46         LUT6 (Prop_lut6_I2_O)        0.124     5.928 r  interp_product_i_29/O
+                         net (fo=2, routed)           0.992     6.920    interp_product_i_29_n_0
+    SLICE_X96Y45                                                      r  interp_product_i_35/I1
+    SLICE_X96Y45         LUT6 (Prop_lut6_I1_O)        0.124     7.044 r  interp_product_i_35/O
+                         net (fo=16, routed)          1.504     8.548    lut_idx__0[0]
+    SLICE_X94Y41                                                      r  interp_product_i_17/I0
+    SLICE_X94Y41         LUT3 (Prop_lut3_I0_O)        0.124     8.672 r  interp_product_i_17/O
+                         net (fo=1, routed)           0.685     9.357    A[2]
+    DSP48_X3Y16                                                       r  interp_product/A[2]
+    DSP48_X3Y16          DSP48E1 (Prop_dsp48e1_A[2]_P[10])
+                                                      3.841    13.198 r  interp_product/P[10]
+                         net (fo=2, routed)           1.013    14.212    p_0_in[1]
+    SLICE_X94Y42                                                      r  log2_out_OBUF[3]_inst_i_5/I1
+    SLICE_X94Y42         LUT2 (Prop_lut2_I1_O)        0.124    14.336 r  log2_out_OBUF[3]_inst_i_5/O
+                         net (fo=1, routed)           0.000    14.336    log2_out_OBUF[3]_inst_i_5_n_0
+    SLICE_X94Y42                                                      r  log2_out_OBUF[3]_inst_i_2/S[1]
+    SLICE_X94Y42         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    14.869 r  log2_out_OBUF[3]_inst_i_2/CO[3]
+                         net (fo=1, routed)           0.000    14.869    log2_out_OBUF[3]_inst_i_2_n_0
+    SLICE_X94Y43                                                      r  log2_out_OBUF[7]_inst_i_2/CI
+    SLICE_X94Y43         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.986 r  log2_out_OBUF[7]_inst_i_2/CO[3]
+                         net (fo=1, routed)           0.000    14.986    log2_out_OBUF[7]_inst_i_2_n_0
+    SLICE_X94Y44                                                      r  log2_out_OBUF[11]_inst_i_2/CI
+    SLICE_X94Y44         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    15.205 r  log2_out_OBUF[11]_inst_i_2/O[0]
+                         net (fo=1, routed)           2.718    17.922    frac_result[8]
+    SLICE_X46Y28                                                      r  log2_out_OBUF[8]_inst_i_1/I0
+    SLICE_X46Y28         LUT2 (Prop_lut2_I0_O)        0.295    18.217 r  log2_out_OBUF[8]_inst_i_1/O
+                         net (fo=1, routed)           3.086    21.304    log2_out_OBUF[8]
+    Y11                                                               r  log2_out_OBUF[8]_inst/I
+    Y11                  OBUF (Prop_obuf_I_O)         2.681    23.985 r  log2_out_OBUF[8]_inst/O
+                         net (fo=0)                   0.000    23.985    log2_out[8]
+    Y11                                                               r  log2_out[8] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
