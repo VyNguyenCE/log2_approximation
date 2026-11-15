@@ -1,7 +1,4 @@
-Running: xsim.dir/log2_pla_unpipelined_top_tb_behav/xsimk.exe -simmode gui -wdb log2_pla_unpipelined_top_tb_behav.wdb -simrunnum 0 -socket 57560
+Running: xsim.dir/log2_pla_unpipelined_top_tb_behav/xsimk.exe -simmode gui -wdb log2_pla_unpipelined_top_tb_behav.wdb -simrunnum 0 -socket 64863
 Design successfully loaded
 Design Loading Memory Usage: 10940 KB (Peak: 10940 KB)
-Design Loading CPU Usage: 62 ms
-Simulation completed
-Simulation Memory Usage: 11828 KB (Peak: 11828 KB)
-Simulation CPU Usage: 92 ms
+Design Loading CPU Usage: 77 ms
