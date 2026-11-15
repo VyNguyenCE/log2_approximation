@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
-| Date         : Sun Nov 15 11:26:28 2026
+| Date         : Sun Nov 15 13:48:38 2026
 | Host         : VY running 64-bit major release  (build 9200)
 | Command      : report_drc -file log2_pla_unpipelined_top_drc_routed.rpt -pb log2_pla_unpipelined_top_drc_routed.pb -rpx log2_pla_unpipelined_top_drc_routed.rpx
 | Design       : log2_pla_unpipelined_top

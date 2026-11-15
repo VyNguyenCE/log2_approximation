@@ -97,6 +97,7 @@ proc step_failed { step } {
 OPTRACE "impl_pla_pipe" END { }
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_pla_pipe" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -121,7 +122,7 @@ OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet {{E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.runs/synth_pla_pipe/log2_pla_core.dcp}}
 OPTRACE "read constraints: implementation" START { }
-  read_xdc {{E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_pipe/imports/new/log2_pipe_core_constraints.xdc}}
+  read_xdc {{E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_1/new/log2_apprx_top_constraints.xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

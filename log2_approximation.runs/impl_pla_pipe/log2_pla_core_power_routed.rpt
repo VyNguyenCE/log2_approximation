@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
-| Date             : Sun Nov 15 11:29:50 2026
+| Date             : Sun Nov 15 13:52:15 2026
 | Host             : VY running 64-bit major release  (build 9200)
 | Command          : report_power -file log2_pla_core_power_routed.rpt -pb log2_pla_core_power_summary_routed.pb -rpx log2_pla_core_power_routed.rpx
 | Design           : log2_pla_core
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.140        |
+| Total On-Chip Power (W)  | 0.123        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.035        |
+| Dynamic (W)              | 0.018        |
 | Device Static (W)        | 0.105        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 83.4         |
-| Junction Temperature (C) | 26.6         |
+| Max Ambient (C)          | 83.6         |
+| Junction Temperature (C) | 26.4         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -58,10 +58,10 @@ Table of Contents
 |   CARRY4       |    <0.001 |       13 |     13300 |            0.10 |
 |   Register     |    <0.001 |       54 |    106400 |            0.05 |
 |   Others       |     0.000 |        3 |       --- |             --- |
-| Signals        |     0.002 |      198 |       --- |             --- |
-| I/O            |     0.030 |       35 |       125 |           28.00 |
+| Signals        |     0.001 |      189 |       --- |             --- |
+| I/O            |     0.014 |       35 |       125 |           28.00 |
 | Static Power   |     0.105 |          |           |                 |
-| Total          |     0.140 |          |           |                 |
+| Total          |     0.123 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,8 +71,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.012 |       0.005 |      0.008 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.021 |       0.010 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.011 |       0.004 |      0.007 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.011 |       0.001 |      0.010 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.008 |       0.007 |      0.001 |       NA    | Unspecified | NA         |
@@ -84,7 +84,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccpint   |       1.000 |     0.017 |       0.000 |      0.017 |       NA    | Unspecified | NA         |
+| Vccpint   |       1.000 |     0.016 |       0.000 |      0.016 |       NA    | Unspecified | NA         |
 | Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |       NA    | Unspecified | NA         |
 | Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |       NA    | Unspecified | NA         |
 | Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -131,11 +131,11 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+----------+--------+-----------------+
-| Clock    | Domain | Constraint (ns) |
-+----------+--------+-----------------+
-| core_clk | clk    |             8.0 |
-+----------+--------+-----------------+
++-------------+--------+-----------------+
+| Clock       | Domain | Constraint (ns) |
++-------------+--------+-----------------+
+| sys_clk_pin | clk    |             8.0 |
++-------------+--------+-----------------+
 
 
 3. Detailed Reports
@@ -147,7 +147,7 @@ Table of Contents
 +-------------------+-----------+
 | Name              | Power (W) |
 +-------------------+-----------+
-| log2_pla_core     |     0.035 |
+| log2_pla_core     |     0.018 |
 |   u_pla_8seg_unit |     0.002 |
 +-------------------+-----------+
 

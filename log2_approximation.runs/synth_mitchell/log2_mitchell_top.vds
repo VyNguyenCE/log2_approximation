@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Sun Nov 15 11:05:27 2026
-# Process ID         : 4796
+# Start of session at: Sun Nov 15 13:37:12 2026
+# Process ID         : 12256
 # Current directory  : E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.runs/synth_mitchell
 # Command line       : vivado.exe -log log2_mitchell_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source log2_mitchell_top.tcl
 # Log file           : E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.runs/synth_mitchell/log2_mitchell_top.vds
@@ -17,22 +17,27 @@
 # CPU Physical cores : 4
 # CPU Logical cores  : 8
 # Host memory        : 17061 MB
-# Swap memory        : 1073 MB
-# Total Virtual      : 18135 MB
-# Available Virtual  : 3060 MB
+# Swap memory        : 3237 MB
+# Total Virtual      : 20299 MB
+# Available Virtual  : 1344 MB
 #-----------------------------------------------------------
 source log2_mitchell_top.tcl -notrace
-create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 540.594 ; gain = 220.141
+create_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 538.715 ; gain = 214.867
+Command: read_checkpoint -auto_incremental -incremental {E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/utils_1/imports/synth_mitchell/log2_mitchell_top.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/utils_1/imports/synth_mitchell/log2_mitchell_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top log2_mitchell_top -part xc7z020clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 3004
+INFO: [Synth 8-7075] Helper process launched with PID 16536
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1315.863 ; gain = 540.574
+Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1318.699 ; gain = 542.539
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'log2_mitchell_top' [E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/sources_1/new/log2_mitchell_top.sv:24]
 INFO: [Synth 8-6157] synthesizing module 'lod_16bit' [E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/sources_1/new/lod_16bit.sv:5]
@@ -43,50 +48,66 @@ INFO: [Synth 8-6155] done synthesizing module 'log2_mitchell_top' (0#1) [E:/User
 WARNING: [Synth 8-3936] Found unconnected internal register 'shifted_x_reg' and it is trimmed from '32' to '31' bits. [E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/sources_1/new/barrel_shifter.sv:14]
 WARNING: [Synth 8-7129] Port in_x[15] in module barrel_shifter is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1433.297 ; gain = 658.008
+Finished RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1436.258 ; gain = 660.098
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1433.297 ; gain = 658.008
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1436.258 ; gain = 660.098
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1433.297 ; gain = 658.008
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1436.258 ; gain = 660.098
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1433.297 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1436.258 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc]
-INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'core_virt_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc:9]
-Finished Parsing XDC File [E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc]
+Parsing XDC File [E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_1/new/log2_apprx_top_constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_1/new/log2_apprx_top_constraints.xdc:5]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_1/new/log2_apprx_top_constraints.xdc:5]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_1/new/log2_apprx_top_constraints.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_1/new/log2_apprx_top_constraints.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst_n'. [E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_1/new/log2_apprx_top_constraints.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_1/new/log2_apprx_top_constraints.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'uart_rx_i'. [E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_1/new/log2_apprx_top_constraints.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_1/new/log2_apprx_top_constraints.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'uart_tx_o'. [E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_1/new/log2_apprx_top_constraints.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_1/new/log2_apprx_top_constraints.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_1/new/log2_apprx_top_constraints.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1480.273 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1485.809 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1480.273 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 1485.809 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1480.273 ; gain = 704.984
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 1485.809 ; gain = 709.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1480.273 ; gain = 704.984
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 1485.809 ; gain = 709.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 1480.273 ; gain = 704.984
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 1485.809 ; gain = 709.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 1480.273 ; gain = 704.984
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 1485.809 ; gain = 709.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -110,25 +131,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 1490.523 ; gain = 715.234
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 1486.996 ; gain = 710.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:49 . Memory (MB): peak = 1639.816 ; gain = 864.527
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 1635.137 ; gain = 858.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:49 . Memory (MB): peak = 1664.668 ; gain = 889.379
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 1635.211 ; gain = 859.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:49 . Memory (MB): peak = 1664.668 ; gain = 889.379
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 1647.137 ; gain = 870.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -146,37 +167,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:57 . Memory (MB): peak = 1899.691 ; gain = 1124.402
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1894.082 ; gain = 1117.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:57 . Memory (MB): peak = 1899.691 ; gain = 1124.402
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1894.082 ; gain = 1117.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:57 . Memory (MB): peak = 1899.691 ; gain = 1124.402
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1894.082 ; gain = 1117.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:57 . Memory (MB): peak = 1899.691 ; gain = 1124.402
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1894.082 ; gain = 1117.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:57 . Memory (MB): peak = 1899.691 ; gain = 1124.402
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1894.082 ; gain = 1117.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:57 . Memory (MB): peak = 1899.691 ; gain = 1124.402
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1894.082 ; gain = 1117.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -201,25 +222,26 @@ Report Cell Usage:
 |7     |OBUF |    17|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:57 . Memory (MB): peak = 1899.691 ; gain = 1124.402
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1894.082 ; gain = 1117.922
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 1899.691 ; gain = 1077.426
-Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:57 . Memory (MB): peak = 1899.691 ; gain = 1124.402
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:01:06 . Memory (MB): peak = 1894.082 ; gain = 1068.371
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 1894.082 ; gain = 1117.922
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1902.480 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1897.281 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1905.121 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1900.945 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete | Checksum: c60228b2
 INFO: [Common 17-83] Releasing license: Synthesis
-19 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+24 Infos, 7 Warnings, 5 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:06 . Memory (MB): peak = 1905.121 ; gain = 1364.527
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1905.121 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:16 ; elapsed = 00:01:48 . Memory (MB): peak = 1900.945 ; gain = 1356.359
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1900.945 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.runs/synth_mitchell/log2_mitchell_top.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file log2_mitchell_top_utilization_synth.rpt -pb log2_mitchell_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Nov 15 11:06:47 2026...
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 15 13:40:14 2026...

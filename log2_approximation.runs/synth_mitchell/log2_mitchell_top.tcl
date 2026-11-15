@@ -57,6 +57,8 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_mitchell" START { ROLLUP_AUTO }
 set_param general.usePosixSpawnForFork 1
+set_param chipscope.maxJobs 2
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -85,10 +87,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc}}
-set_property used_in_implementation false [get_files {{E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc}}]
+read_xdc {{E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_1/new/log2_apprx_top_constraints.xdc}}
+set_property used_in_implementation false [get_files {{E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_1/new/log2_apprx_top_constraints.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental {E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/utils_1/imports/synth_mitchell/log2_mitchell_top.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

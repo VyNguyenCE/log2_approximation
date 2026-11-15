@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_lut" LaunchPart="xc7z020clg400-1" LaunchTime="1794715616">
+<GenRun Id="synth_lut" LaunchPart="xc7z020clg400-1" LaunchTime="1794724963" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_lut/log2_lut_dsp_top.dcp">
   <File Type="PA-TCL" Name="log2_lut_dsp_top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="log2_lut_dsp_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="log2_lut_dsp_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="log2_lut_dsp_top.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="log2_lut_dsp_top_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="log2_lut_dsp_top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="log2_lut_dsp_top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="log2_lut_dsp_top.dcp"/>
@@ -36,11 +36,10 @@
       <Option Name="TopModule" Val="log2_lut_dsp_top"/>
     </Config>
   </FileSet>
-  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_comb" RelGenDir="$PGENDIR/constrs_comb">
-    <File Path="$PSRCDIR/constrs_comb/imports/new/log2_comb_core_constraints.xdc">
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/log2_apprx_top_constraints.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PSRCDIR/constrs_1/new/log2_comb_core_constraints.xdc"/>
-        <Attr Name="ImportTime" Val="1794715320"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
@@ -56,6 +55,38 @@
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/utils_1/imports/synth_lut/log2_lut_dsp_top.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_lut"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/utils_1/imports/synth_pla/log2_pla_unpipelined_top.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_pla"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/utils_1/imports/synth_mitchell/log2_mitchell_top.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_mitchell"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/utils_1/imports/synth_pla_pipe/log2_pla_core.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_pla_pipe"/>
         <Attr Name="AutoDcp" Val="1"/>
       </FileInfo>
     </File>

@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Sun Nov 15 11:09:27 2026
-# Process ID         : 16400
+# Start of session at: Sun Nov 15 13:48:48 2026
+# Process ID         : 8976
 # Current directory  : E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.runs/synth_pla_pipe
 # Command line       : vivado.exe -log log2_pla_core.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source log2_pla_core.tcl
 # Log file           : E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.runs/synth_pla_pipe/log2_pla_core.vds
@@ -17,8 +17,8 @@
 # CPU Physical cores : 4
 # CPU Logical cores  : 8
 # Host memory        : 17061 MB
-# Swap memory        : 1073 MB
-# Total Virtual      : 18135 MB
-# Available Virtual  : 3131 MB
+# Swap memory        : 4495 MB
+# Total Virtual      : 21556 MB
+# Available Virtual  : 3406 MB
 #-----------------------------------------------------------
 source log2_pla_core.tcl -notrace

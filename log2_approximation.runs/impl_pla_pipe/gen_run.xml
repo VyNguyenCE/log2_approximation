@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_pla_pipe" LaunchPart="xc7z020clg400-1" LaunchTime="1794716797">
-  <File Type="ROUTE-PWR" Name="log2_pla_core_power_routed.rpt"/>
+<GenRun Id="impl_pla_pipe" LaunchPart="xc7z020clg400-1" LaunchTime="1794725410">
   <File Type="PA-TCL" Name="log2_pla_core.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="log2_pla_core_power_summary_routed.pb"/>
-  <File Type="OPT-RQA-PB" Name="log2_pla_core_rqa_opted.pb"/>
   <File Type="REPORTS-TCL" Name="log2_pla_core_reports.tcl"/>
   <File Type="INIT-TIMING" Name="log2_pla_core_timing_summary_init.rpt"/>
   <File Type="OPT-DCP" Name="log2_pla_core_opt.dcp"/>
   <File Type="OPT-DRC" Name="log2_pla_core_drc_opted.rpt"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="log2_pla_core_routed_bb.dcp"/>
   <File Type="OPT-UTIL" Name="log2_pla_core_utilization_opted.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="log2_pla_core_timing_summary_routed.pb"/>
   <File Type="OPT-UTIL-PB" Name="log2_pla_core_utilization_opted.pb"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="log2_pla_core_methodology_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="log2_pla_core.hwdef"/>
   <File Type="OPT-TIMING" Name="log2_pla_core_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="log2_pla_core_rqa_opted.pb"/>
   <File Type="PWROPT-DCP" Name="log2_pla_core_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="log2_pla_core_drc_pwropted.rpt"/>
-  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="log2_pla_core.nts"/>
   <File Type="PWROPT-TIMING" Name="log2_pla_core_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="log2_pla_core_placed.dcp"/>
   <File Type="PLACE-IO" Name="log2_pla_core_io_placed.rpt"/>
@@ -27,19 +22,17 @@
   <File Type="PLACE-CTRL" Name="log2_pla_core_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="log2_pla_core_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="log2_pla_core_incremental_reuse_pre_placed.rpt"/>
-  <File Type="NOC_SOLUTION_FILE" Name="log2_pla_core.ncr"/>
   <File Type="PLACE-TIMING" Name="log2_pla_core_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="log2_pla_core_power_routed.rpx"/>
   <File Type="PLACE-RQA-PB" Name="log2_pla_core_rqa_placed.pb"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="log2_pla_core_postplace_pwropt.dcp"/>
   <File Type="POSTPLACE-PWROPT-TIMING" Name="log2_pla_core_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="log2_pla_core_physopt.dcp"/>
   <File Type="PHYSOPT-DRC" Name="log2_pla_core_drc_physopted.rpt"/>
   <File Type="PHYSOPT-TIMING" Name="log2_pla_core_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-UTIL" Name="log2_pla_core_utilization_routed.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="log2_pla_core_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="log2_pla_core_routed.dcp"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="log2_pla_core_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="log2_pla_core_routed_bb.dcp"/>
+  <File Type="ROUTE-UTIL" Name="log2_pla_core_utilization_routed.rpt"/>
   <File Type="ROUTE-UTIL-PB" Name="log2_pla_core_utilization_routed.pb"/>
   <File Type="ROUTE-DRC" Name="log2_pla_core_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="log2_pla_core_drc_routed.pb"/>
@@ -47,15 +40,20 @@
   <File Type="ROUTE-METHODOLOGY-DRC" Name="log2_pla_core_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="log2_pla_core_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="log2_pla_core_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="log2_pla_core_rqs_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="log2_pla_core_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="log2_pla_core_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="log2_pla_core_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="log2_pla_core_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="log2_pla_core_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="log2_pla_core_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="log2_pla_core_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="log2_pla_core_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="log2_pla_core_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="log2_pla_core_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="log2_pla_core_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="log2_pla_core_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="log2_pla_core_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="log2_pla_core_rqs_routed.pb"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="log2_pla_core_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="log2_pla_core_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="log2_pla_core_timing_summary_postroute_physopted.rpt"/>
@@ -64,6 +62,8 @@
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="log2_pla_core_bus_skew_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="log2_pla_core_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="log2_pla_core_bus_skew_postroute_physopted.rpx"/>
+  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="log2_pla_core.nts"/>
+  <File Type="NOC_SOLUTION_FILE" Name="log2_pla_core.ncr"/>
   <File Type="BG-BIT" Name="log2_pla_core.bit"/>
   <File Type="BG-BIN" Name="log2_pla_core.bin"/>
   <File Type="BITSTR-MSK" Name="log2_pla_core.msk"/>
@@ -147,11 +147,10 @@
       <Option Name="TopModule" Val="log2_pla_core"/>
     </Config>
   </FileSet>
-  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_pipe" RelGenDir="$PGENDIR/constrs_pipe">
-    <File Path="$PSRCDIR/constrs_pipe/imports/new/log2_pipe_core_constraints.xdc">
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/log2_apprx_top_constraints.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PSRCDIR/constrs_1/new/log2_pipe_core_constraints.xdc"/>
-        <Attr Name="ImportTime" Val="1794715317"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
@@ -167,6 +166,38 @@
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/utils_1/imports/synth_lut/log2_lut_dsp_top.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_lut"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/utils_1/imports/synth_pla/log2_pla_unpipelined_top.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_pla"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/utils_1/imports/synth_mitchell/log2_mitchell_top.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_mitchell"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/utils_1/imports/synth_pla_pipe/log2_pla_core.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_pla_pipe"/>
         <Attr Name="AutoDcp" Val="1"/>
       </FileInfo>
     </File>
