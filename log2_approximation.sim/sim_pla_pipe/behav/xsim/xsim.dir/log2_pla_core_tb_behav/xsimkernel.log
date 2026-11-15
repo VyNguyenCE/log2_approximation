@@ -1,0 +1,4 @@
+Running: xsim.dir/log2_pla_core_tb_behav/xsimk.exe -simmode gui -wdb log2_pla_core_tb_behav.wdb -simrunnum 0 -socket 54781
+Design successfully loaded
+Design Loading Memory Usage: 10984 KB (Peak: 10984 KB)
+Design Loading CPU Usage: 62 ms
