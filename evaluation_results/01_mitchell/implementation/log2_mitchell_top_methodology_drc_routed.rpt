@@ -1,0 +1,352 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Sun Nov 15 11:16:45 2026
+| Host         : VY running 64-bit major release  (build 9200)
+| Command      : report_methodology -file log2_mitchell_top_methodology_drc_routed.rpt -pb log2_mitchell_top_methodology_drc_routed.pb -rpx log2_mitchell_top_methodology_drc_routed.rpx
+| Design       : log2_mitchell_top
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 50
++-----------+----------+------------------------------------------+--------+
+| Rule      | Severity | Description                              | Checks |
++-----------+----------+------------------------------------------+--------+
+| TIMING-16 | Warning  | Large setup violation                    | 17     |
+| XDCH-2    | Warning  | Same min and max delay values on IO port | 33     |
++-----------+----------+------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -3.274 ns between x_in[7] (clocked by core_virt_clk) and invalid_op (clocked by core_virt_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -3.532 ns between x_in[10] (clocked by core_virt_clk) and log2_out[15] (clocked by core_virt_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -3.631 ns between x_in[5] (clocked by core_virt_clk) and log2_out[14] (clocked by core_virt_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -3.736 ns between x_in[7] (clocked by core_virt_clk) and log2_out[13] (clocked by core_virt_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -3.798 ns between x_in[7] (clocked by core_virt_clk) and log2_out[12] (clocked by core_virt_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -4.485 ns between x_in[7] (clocked by core_virt_clk) and log2_out[6] (clocked by core_virt_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -4.546 ns between x_in[7] (clocked by core_virt_clk) and log2_out[3] (clocked by core_virt_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -4.629 ns between x_in[7] (clocked by core_virt_clk) and log2_out[7] (clocked by core_virt_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -4.631 ns between x_in[7] (clocked by core_virt_clk) and log2_out[2] (clocked by core_virt_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -4.671 ns between x_in[6] (clocked by core_virt_clk) and log2_out[5] (clocked by core_virt_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -4.720 ns between x_in[6] (clocked by core_virt_clk) and log2_out[1] (clocked by core_virt_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -4.741 ns between x_in[6] (clocked by core_virt_clk) and log2_out[8] (clocked by core_virt_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -4.951 ns between x_in[7] (clocked by core_virt_clk) and log2_out[11] (clocked by core_virt_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -4.991 ns between x_in[6] (clocked by core_virt_clk) and log2_out[4] (clocked by core_virt_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -4.998 ns between x_in[7] (clocked by core_virt_clk) and log2_out[9] (clocked by core_virt_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -5.065 ns between x_in[6] (clocked by core_virt_clk) and log2_out[10] (clocked by core_virt_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -5.130 ns between x_in[6] (clocked by core_virt_clk) and log2_out[0] (clocked by core_virt_clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'x_in[0]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock core_virt_clk -min 0.000 [get_ports {x_in[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 13)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'x_in[10]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock core_virt_clk -min 0.000 [get_ports {x_in[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 13)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'x_in[11]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock core_virt_clk -min 0.000 [get_ports {x_in[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 13)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'x_in[12]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock core_virt_clk -min 0.000 [get_ports {x_in[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 13)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'x_in[13]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock core_virt_clk -min 0.000 [get_ports {x_in[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 13)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'x_in[14]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock core_virt_clk -min 0.000 [get_ports {x_in[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 13)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'x_in[15]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock core_virt_clk -min 0.000 [get_ports {x_in[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 13)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'x_in[1]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock core_virt_clk -min 0.000 [get_ports {x_in[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 13)
+Related violations: <none>
+
+XDCH-2#9 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'x_in[2]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock core_virt_clk -min 0.000 [get_ports {x_in[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 13)
+Related violations: <none>
+
+XDCH-2#10 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'x_in[3]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock core_virt_clk -min 0.000 [get_ports {x_in[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 13)
+Related violations: <none>
+
+XDCH-2#11 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'x_in[4]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock core_virt_clk -min 0.000 [get_ports {x_in[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 13)
+Related violations: <none>
+
+XDCH-2#12 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'x_in[5]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock core_virt_clk -min 0.000 [get_ports {x_in[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 13)
+Related violations: <none>
+
+XDCH-2#13 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'x_in[6]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock core_virt_clk -min 0.000 [get_ports {x_in[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 13)
+Related violations: <none>
+
+XDCH-2#14 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'x_in[7]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock core_virt_clk -min 0.000 [get_ports {x_in[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 13)
+Related violations: <none>
+
+XDCH-2#15 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'x_in[8]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock core_virt_clk -min 0.000 [get_ports {x_in[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 13)
+Related violations: <none>
+
+XDCH-2#16 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'x_in[9]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock core_virt_clk -min 0.000 [get_ports {x_in[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 13)
+Related violations: <none>
+
+XDCH-2#17 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'invalid_op' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock core_virt_clk -min 0.000 [get_ports invalid_op]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 20)
+Related violations: <none>
+
+XDCH-2#18 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'log2_out[0]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock core_virt_clk -min 0.000 [get_ports {log2_out[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 17)
+Related violations: <none>
+
+XDCH-2#19 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'log2_out[10]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock core_virt_clk -min 0.000 [get_ports {log2_out[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 17)
+Related violations: <none>
+
+XDCH-2#20 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'log2_out[11]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock core_virt_clk -min 0.000 [get_ports {log2_out[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 17)
+Related violations: <none>
+
+XDCH-2#21 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'log2_out[12]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock core_virt_clk -min 0.000 [get_ports {log2_out[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 17)
+Related violations: <none>
+
+XDCH-2#22 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'log2_out[13]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock core_virt_clk -min 0.000 [get_ports {log2_out[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 17)
+Related violations: <none>
+
+XDCH-2#23 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'log2_out[14]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock core_virt_clk -min 0.000 [get_ports {log2_out[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 17)
+Related violations: <none>
+
+XDCH-2#24 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'log2_out[15]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock core_virt_clk -min 0.000 [get_ports {log2_out[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 17)
+Related violations: <none>
+
+XDCH-2#25 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'log2_out[1]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock core_virt_clk -min 0.000 [get_ports {log2_out[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 17)
+Related violations: <none>
+
+XDCH-2#26 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'log2_out[2]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock core_virt_clk -min 0.000 [get_ports {log2_out[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 17)
+Related violations: <none>
+
+XDCH-2#27 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'log2_out[3]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock core_virt_clk -min 0.000 [get_ports {log2_out[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 17)
+Related violations: <none>
+
+XDCH-2#28 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'log2_out[4]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock core_virt_clk -min 0.000 [get_ports {log2_out[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 17)
+Related violations: <none>
+
+XDCH-2#29 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'log2_out[5]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock core_virt_clk -min 0.000 [get_ports {log2_out[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 17)
+Related violations: <none>
+
+XDCH-2#30 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'log2_out[6]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock core_virt_clk -min 0.000 [get_ports {log2_out[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 17)
+Related violations: <none>
+
+XDCH-2#31 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'log2_out[7]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock core_virt_clk -min 0.000 [get_ports {log2_out[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 17)
+Related violations: <none>
+
+XDCH-2#32 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'log2_out[8]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock core_virt_clk -min 0.000 [get_ports {log2_out[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 17)
+Related violations: <none>
+
+XDCH-2#33 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'log2_out[9]' relative to clock core_virt_clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock core_virt_clk -min 0.000 [get_ports {log2_out[*]}]
+E:/Users/PC/VY/HCMUT/Master/Digital System Design on FPGA/Assignment/log2_approximation/log2_approximation.srcs/constrs_comb/imports/new/log2_comb_core_constraints.xdc (Line: 17)
+Related violations: <none>
+
+
