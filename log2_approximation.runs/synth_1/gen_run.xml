@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1794680538" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/log2_apprx_top.dcp">
-  <File Type="PA-TCL" Name="log2_pla_unpipelined_top.tcl"/>
   <File Type="REPORTS-TCL" Name="log2_pla_unpipelined_top_reports.tcl"/>
-  <File Type="RDS-RDS" Name="log2_pla_unpipelined_top.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="log2_pla_unpipelined_top_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="log2_pla_unpipelined_top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="log2_pla_unpipelined_top_utilization_synth.pb"/>
+  <File Type="PA-TCL" Name="log2_pla_unpipelined_top.tcl"/>
+  <File Type="RDS-RDS" Name="log2_pla_unpipelined_top.vds"/>
   <File Type="RDS-DCP" Name="log2_pla_unpipelined_top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="log2_pla_unpipelined_top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="log2_pla_unpipelined_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/log2_lut_dsp_top.sv">
